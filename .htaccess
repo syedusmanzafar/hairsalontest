@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/book-appointment [NC]
+RewriteRule ^(.*)$ /book-appointment/index.html [R=301,L]

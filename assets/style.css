@@ -1,0 +1,245 @@
+@font-face {
+  font-family: Oswald;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/oswald/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Oswald;
+  font-weight: 200;
+  font-display: swap;
+  src: url('~assets/fonts/oswald/Oswald-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Oswald;
+  font-weight: 300;
+  font-display: swap;
+  src: url('~assets/fonts/oswald/Oswald-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Oswald;
+  font-weight: 500;
+  font-display: swap;
+  src: url('~assets/fonts/oswald/Oswald-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Oswald;
+  font-weight: 600;
+  font-display: swap;
+  src: url('~assets/fonts/oswald/Oswald-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Oswald;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/oswald/Oswald-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+:root {
+  --primary: #8b6c3e;
+}
+
+::selection {
+  color: white;
+  background: var(--primary);
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+.siteheader {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+}
+
+.bg-theme {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+#topbar a {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+#topbar a:hover {
+  color: var(--primary);
+}
+
+.topbar-wrapper {
+  background: #212529;
+}
+
+#topbar .nav-link svg {
+  width: 13px;
+  height: 13px;
+  margin-right: 12px;
+}
+
+@media screen and (min-width: 767px) {
+  #topbar a {
+    font-size: 17px;
+  }
+  .lines {
+    position: relative;
+  }
+  .lines:after {
+    content: '';
+    display: block;
+    width: 308px;
+    height: 140px;
+    position: absolute;
+    left: -55px;
+    background-image: url('~assets/bar1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: -5;
+    bottom: -45px;
+  }
+}
+
+.main-menu a {
+  color: #000 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.main-menu a:hover {
+  color: var(--primary) !important;
+}
+
+#btntoggle {
+  padding: 0;
+  border: 0;
+  color: var(--primary) !important;
+}
+
+.footer {
+  background: #212529;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+.footer a {
+  color: #fff;
+  padding: 0;
+}
+
+.footer a:hover {
+  color: var(--primary);
+}
+
+.footer .subscribe h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 6px;
+}
+
+.footer .subscribe-input {
+  padding: 1.7rem 1.4rem !important;
+}
+
+.footer .subscribe-input:focus,
+.footer .subscribe-input:active {
+  outline: none;
+  box-shadow: none;
+}
+span.underline {
+  display: block;
+  width: 72px;
+  height: 1px;
+  background: var(--primary);
+  margin-top: 15px;
+}
+span.underline.white {
+  background: white !important;
+}
+.time-left {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.sub-heading {
+  color: #878787;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.heading {
+  font-weight: 400;
+  color: #000;
+  font-size: 33px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.barber-btn {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  padding: 17px 20px;
+}
+.barber-btn:hover,
+.barber-btn:active,
+.barber-btn:focus {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+  outline: none;
+  box-shadow: none;
+}
+.pattern {
+  position: relative;
+}
+.pattern:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.25;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #fff 10px
+    ),
+    repeating-linear-gradient(#d28a0655, #d28a06);
+}
